@@ -1,13 +1,13 @@
-package com.example.kataapi;
+package kata.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KataApiApplication {
+public class ApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KataApiApplication.class, args);
+        SpringApplication.run(ApiApplication.class, args);
     }
 
 }
