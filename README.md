@@ -5,7 +5,7 @@
 
 
 # Kata API
-Kata : crear una [API](https://github.com/OAI/OpenAPI-Specification)
+Kata: crear una [API](https://github.com/OAI/OpenAPI-Specification)
 funcional [CRUD](https://www.codecademy.com/articles/what-is-crud) sobre
 varias tablas en MySQL.
 
@@ -21,7 +21,7 @@ En la Kata se asume familiaridad con las siguientes tecnologías
 
 ## Procedimiento
 [Hacer un fork](https://github.com/epfl-dojo/kata-api/#fork-destination-box) del repositorio,
-crear una rama (`git checkout -b username/langage` por ejemplo `git checkout
+crear una rama (`git checkout -b username/language` por ejemplo `git checkout
 -b nicolasreymond/php`, desde vuestro fork). Haced un pull request para añadirlo a este 
 repo y añadiéndoos al final de este fichero como autores. 
 
@@ -35,32 +35,28 @@ Y para lanzar los contenedores:
 docker-compose up -d
 ```
 
-## Objetivos de la Kata
-- [ ] Forcker le dépot Git
-- [ ] Créer une nouvelle branche (ex. : `usermame/langage`)
-- [ ] Ajouter un container Docker (pour le langage de votre choix) 
-  au docker-compose
+
 ### Objetivos del módulo  
-- [ ] Comprender cómo detectar las diferentes  [peticiones HTTP](https://developer.mozilla.org/es/docs/Web/HTTP/Methods)
+- [ ] Comprender cómo detectar las diferentes [peticiones HTTP](https://developer.mozilla.org/es/docs/Web/HTTP/Methods)
   (GET, POST, PUT, PATCH, DELETE)
 - [ ] Implementación del CRUD sobre el endpoint `/beer*`
    - [ ] Implementar la creación       **`C`**`reate`
    - [ ] Implementar la lectura        **`R`**`ead`
-   - [ ] Implementar la actualilzación **`U`**`pdate`
+   - [ ] Implementar la actualización **`U`**`pdate`
    - [ ] Implementar el borrado        **`D`**`elete`
-- [ ] Implementar la lectura de los endpoints `/brewerie*`, `/categorie*` et `/style*`
+- [ ] Implementar la lectura de los endpoints `/brewerie*`, `/categorie*` y `/style*`
 - [ ] Probar la API con
   - [postman](https://www.postman.com/),
   - [insomnia](https://insomnia.rest), 
   - [curl](https://curl.haxx.se/), 
-  - [httpie](https://httpie.org/), etc…  
+  - [httpie](https://httpie.org/), etc.  
   y guardar esas peticiones en un fichero de resultados.
 - [ ] Hacer un documento que explique cómo utilizar la API
   (con ejemplos de cada una de las consultas)
 
 Ir más lejos
 - [ ] Implementar la paginación para consultar que devuelven muchos datos 
-    por ejemplo con el método HTTP  HEAD.
+    por ejemplo con el método HTTP HEAD.
   [HEAD](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/HEAD)
 - [ ] Integración con [swagger](https://swagger.io/tools/open-source/open-source-integrations/) 
   del lenguaje escogido.
@@ -69,27 +65,23 @@ Ir más lejos
 
 ## Descripción de rutas a utilizar
 
-| Endpoint         | Resultado                               | Método   |
-|----------------- |-----------------------------------------|:--------:|
-|`/beers`          | Muestra todas las cervezas              | GET      |
-|`/beer`           | Añadir una cerveza                      | POST     |
-|`/beer/{id}`      | Mostrar la cerveza con el id `{id}`     | GET      |
-|`/beer/{id}`      | Eliminar una cerveza                    | DELETE   |
-|`/beer/{id}`      | Modificar una cerveza                   | PUT      |
-|`/beer/{id}`      | Modificar parcialmente una cerveza      | PATCH    |
-|`/breweries`      | Listar todas las cerveceras             | GET      |
-|`/brewerie/{id}`  | Mostrar la cervecera `{id}`             | GET      |
-|`/categories`     | Listar todas las categorías             | GET      |
-|`/categorie/{id}` | Mostrar la categoría `{id}`             | GET      |
-|`/styles`         | Listar todos los estilos -style-        | GET      |
-|`/style/{id}`     | Mostrar el estilo -style- `{id}`        | GET      |
+| Endpoint          | Resultado                           | Método |
+|-------------------|-------------------------------------|:------:|
+| `/beers`          | Muestra todas las cervezas          |  GET   |
+| `/beer`           | Añadir una cerveza                  |  POST  |
+| `/beer/{id}`      | Mostrar la cerveza con el id `{id}` |  GET   |
+| `/beer/{id}`      | Eliminar una cerveza                | DELETE |
+| `/beer/{id}`      | Modificar una cerveza               |  PUT   |
+| `/beer/{id}`      | Modificar parcialmente una cerveza  | PATCH  |
+| `/breweries`      | Listar todas las cerveceras         |  GET   |
+| `/brewerie/{id}`  | Mostrar la cervecera `{id}`         |  GET   |
+| `/categories`     | Listar todas las categorías         |  GET   |
+| `/categorie/{id}` | Mostrar la categoría `{id}`         |  GET   |
+| `/styles`         | Listar todos los estilos -style-    |  GET   |
+| `/style/{id}`     | Mostrar el estilo -style- `{id}`    |  GET   |
 
 
-## Colaboradores (idiomas en orden alfabético)
+## Realizado por
 
-[Laravel](https://github.com/SaphireVert/Kata-API/tree/saphirevert/laravel) → [![saphirevert-repos][saphirevert-shield]][saphirevert-url]
-
-
-[saphirevert-shield]: https://badgen.net/badge/Github/SaphireVert/green?icon=https://svgshare.com/i/Srf.svg
-[saphirevert-url]: https://github.com/saphirevert/
-
+- [Paula Flor García](https://github.com/03Paula)
+- [Paula Rumeu Romero](https://github.com/salem404)
